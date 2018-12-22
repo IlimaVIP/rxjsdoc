@@ -7,8 +7,41 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   <app-root></app-root>
 </body>
+<script>
+if (window.innerWidth > 990) {
+  document.getElementById("menu").classList.add("toggle_nav");
+  document.getElementById("navbar").style.width = "280px";
+  document.getElementById("main-doc").style.marginLeft = "280px";
+}
+function openNav() {
+  if (window.innerWidth > 990) {
+    if(!document.getElementById("menu").classList.contains("toggle_nav")) {
+      document.getElementById("menu").classList.add("toggle_nav");
+      document.getElementById("navbar").style.width = "280px";
+      document.getElementById("main-doc").style.marginLeft = "280px";
+    } else {
+      document.getElementById("menu").classList.remove("toggle_nav");
+      document.getElementById("navbar").style.width = "0";
+      document.getElementById("main-doc").style.marginLeft = "0";
+    }
+  } else {
+    if(!document.getElementById("menu").classList.contains("toggle_nav")) {
+      document.getElementById("menu").classList.add("toggle_nav");
+      document.getElementById("navbar").style.width = "260px";
+      document.getElementById("dark_mat").style.visibility = "visible";
+    } else {
+      document.getElementById("menu").classList.remove("toggle_nav");
+      document.getElementById("navbar").style.width = "0";
+      document.getElementById("dark_mat").style.visibility = "hidden";
+    }
+  }
+  
+  
+}
+</script>
 </html>
