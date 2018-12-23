@@ -1,13 +1,13 @@
 <nav class="side_menu" id="navbar">
   
   <div class="navigate">
-    <header><a href="#home"> RxJS </a></header>
+    <header><a routerLink="/"> RxJS </a></header>
   </div>
   <div class="navigate">
-    <a class="nav-link" href="#Overview">Overview</a>
+    <a class="nav-link" routerLink="/overview">Overview</a>
   </div>
   <ul class="sub_navigate">
-    <li><a class="nav-link" href="#Observable">Observables</a></li>
+    <li><a class="nav-link" routerLink="/overview/observables">Observables</a></li>
     <li><a class="nav-link" href="#Overview">Subscription</a></li>
     <li><a class="nav-link" href="#Overview">Subjects</a></li>
   </ul>
@@ -41,44 +41,19 @@
       </svg>
     </div>
   </div>
-  <a href="#home">
+  <a routerLink="/">
       <img width="40" src="https://cdn-images-1.medium.com/max/1200/1*JQ_FA4arzgHWD9rp9JSjvg.png" alt="">
   </a>
-  <a href="#home" class="big_screen"><header class="logo_name">RxJS</header></a>
-  <a href="#rxjs" class="big_screen"><span>overview</span></a>
-  <a href="#rxjs" class="big_screen nav-link"><span>reference</span></a>
-  <a href="#rxjs" class="big_screen"><span>migration</span></a>
-  <a href="#rxjs" class="big_screen"><span>team</span></a>
+  <a routerLink="/" class="big_screen"><header class="logo_name">RxJS</header></a>
+  <a routerLink="/overview" class="big_screen"><span>overview</span></a>
+  <a href="#" class="big_screen nav-link"><span>reference</span></a>
+  <a href="#" class="big_screen"><span>migration</span></a>
+  <a href="#" class="big_screen"><span>team</span></a>
   <a href="https://github.com/ReactiveX/rxjs" target="_blank"><i class="fa fa-github"></i></a>
 </nav>
 
 <div id="dark_mat"></div>
 
-<main class="main" id="main-doc">
-  <div class="home_page" id="home">
-    <div class="flexed_container">
-      <div class="flex_box">
-        <img src="https://cdn-images-1.medium.com/max/1200/1*vFxLildvZeG4DrqBH_2lxw.png" alt="">
-      </div>
-      <div class="flex_box">
-        <h1>RxJS</h1>
-        <span>Reactive Extensions Library for JavaScript</span><br /><br />
-        <a href="#">GET STARTED</a>
-      </div>
-    </div>
-    <div class="description">
-      <span>REACTIVE EXTENSIONS LIBRARY FOR JAVASCRIPT</span>
-      <p>RxJS is a library for reactive programming using Observables, to make it easier to compose asynchronous or callback-based code. This project is a rewrite of Reactive-Extensions/RxJS with better performance, better modularity, better debuggable call stacks, while staying mostly backwards compatible, with some breaking changes that reduce the API surface</p>
-    </div>
-    <div class="code_link">
-      <hr>
-      <div class="card">
-        <a href="#">
-          <div class="card_inner">
-            <p>Please pay attention to our</p>
-            <h3>Code of Conduct</h3>
-          </div>
-        </a>
-      </div>
-    </div>
-  </div>
+<main  in class="main" id="main-doc">
+  <router-outlet></router-outlet>
+</main>
