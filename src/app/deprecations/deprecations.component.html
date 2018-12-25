@@ -1,0 +1,90 @@
+<section class="main-section">
+    <header id="deprecations">Deprecations</header>
+    <p class="important">The API listed below will be removed in the next major release!</p>
+    <table>
+  
+      <tbody><tr>
+          <td>
+              <a href="api/index/class/Scheduler">Scheduler</a>
+          </td>
+          <td>
+              Scheduler is an internal implementation detail of RxJS, and
+  should not be used directly. Rather, create your own class and implement
+  <a href="api/index/interface/SchedulerLike"><code>SchedulerLike</code></a>
+          </td>
+      </tr>
+      
+      <tr>
+          <td>
+              <a href="api/index/function/empty">empty</a>
+          </td>
+          <td>
+              Deprecated in favor of using <a href="api/index/const/EMPTY"><code>EMPTY</code></a> constant.
+          </td>
+      </tr>
+      
+      <tr>
+          <td>
+              <a href="api/index/function/never">never</a>
+          </td>
+          <td>
+              Deprecated in favor of using <a href="api/index/const/NEVER"><code>NEVER</code></a> constant.
+          </td>
+      </tr>
+      
+      <tr>
+          <td>
+              <a href="api/index/type-alias/ObservableLike">ObservableLike</a>
+          </td>
+          <td>
+              use <a href="api/index/type-alias/InteropObservable"><code>InteropObservable</code></a>
+          </td>
+      </tr>
+      
+      <tr>
+          <td>
+              <a href="api/operators/combineLatest">combineLatest</a>
+          </td>
+          <td>
+              Deprecated in favor of static <a href="api/index/function/combineLatest"><code>combineLatest</code></a>.
+          </td>
+      </tr>
+      
+      <tr>
+          <td>
+              <a href="api/operators/concat">concat</a>
+          </td>
+          <td>
+              Deprecated in favor of static <a href="api/index/function/concat"><code>concat</code></a>.
+          </td>
+      </tr>
+      
+      <tr>
+          <td>
+              <a href="api/operators/merge">merge</a>
+          </td>
+          <td>
+              Deprecated in favor of static <a href="api/index/function/merge"><code>merge</code></a>.
+          </td>
+      </tr>
+      
+      <tr>
+          <td>
+              <a href="api/operators/race">race</a>
+          </td>
+          <td>
+              Deprecated in favor of static <a href="api/index/function/race"><code>race</code></a>.
+          </td>
+      </tr>
+      
+      <tr>
+          <td>
+              <a href="api/operators/zip">zip</a>
+          </td>
+          <td>
+              Deprecated in favor of static <a href="api/index/function/zip"><code>zip</code></a>.
+          </td>
+      </tr>
+      
+    </tbody></table>
+  </section>
