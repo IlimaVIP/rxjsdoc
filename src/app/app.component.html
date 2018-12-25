@@ -8,11 +8,11 @@
   </div>
   <ul class="sub_navigate">
     <li><a class="nav-link" routerLink="/overview/observables">Observables</a></li>
-    <li><a class="nav-link" href="#Overview">Subscription</a></li>
-    <li><a class="nav-link" href="#Overview">Subjects</a></li>
+    <li><a class="nav-link" routerLink="/overview/subscription">Subscription</a></li>
+    <li><a class="nav-link" routerLink="/overview/subject">Subjects</a></li>
   </ul>
   <div class="navigate">
-    <a class="nav-link" href="#Installation">Installation</a>
+    <a class="nav-link" routerLink="/installation">Installation</a>
   </div>
   <div class="navigate">
     <a class="nav-link" href="#Reference">Reference</a>
@@ -57,3 +57,11 @@
 <main  in class="main" id="main-doc">
   <router-outlet></router-outlet>
 </main>
+
+<footer id="footer">
+  <div class="footer_inner">
+    <p> Code licensed under an <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache-2.0 License</a>. Documentation licensed under <a href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
+  </p>
+  <p> Version 6.3.3-local+sha.d032804c.</p>
+  </div>
+</footer>

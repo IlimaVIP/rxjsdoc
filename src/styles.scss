@@ -326,7 +326,7 @@
   
   .main-section {
     @media (min-width:990px) {
-      margin: 30px;
+      margin: 10px 30px;
     }
     @media (max-width:990px) {
       margin: 30px 3px;
@@ -375,6 +375,10 @@
     }
     a {
       color: #d81b60;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #6e6e6e;
     }
     ul {
       font-size: 14px;
@@ -396,6 +400,19 @@
           background-color: #f1f1f1;
           border-radius: 4px;
         }
+      }
+    }
+    ol {
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: .3px;
+      font-weight: 400;
+      li {
+        margin: 4px 0;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: .3px;
+        font-weight: 400;
       }
     }
     .code-example {

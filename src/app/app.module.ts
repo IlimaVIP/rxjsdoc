@@ -6,13 +6,21 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { OverviewComponent } from './overview/overview.component';
 import { ObservablesComponent } from './observables/observables.component';
+import { SubscriptionComponent } from './subscription/subscription.component';
+import { SubjectComponent } from './subject/subject.component';
+import { InstallationComponent } from './installation/installation.component';
+import { ConductComponent } from './conduct/conduct.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     OverviewComponent,
-    ObservablesComponent
+    ObservablesComponent,
+    SubscriptionComponent,
+    SubjectComponent,
+    InstallationComponent,
+    ConductComponent
   ],
   imports: [
     BrowserModule,

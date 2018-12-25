@@ -17,6 +17,7 @@ if (window.innerWidth > 990) {
   document.getElementById("menu").classList.add("toggle_nav");
   document.getElementById("navbar").style.width = "280px";
   document.getElementById("main-doc").style.marginLeft = "280px";
+  document.getElementById("footer").style.marginLeft = "280px";
 }
 function openNav() {
   if (window.innerWidth > 990) {
@@ -24,10 +25,12 @@ function openNav() {
       document.getElementById("menu").classList.add("toggle_nav");
       document.getElementById("navbar").style.width = "280px";
       document.getElementById("main-doc").style.marginLeft = "280px";
+      document.getElementById("footer").style.marginLeft = "280px";
     } else {
       document.getElementById("menu").classList.remove("toggle_nav");
       document.getElementById("navbar").style.width = "0";
       document.getElementById("main-doc").style.marginLeft = "0";
+      document.getElementById("footer").style.marginLeft = "0";
     }
   } else {
     if(!document.getElementById("menu").classList.contains("toggle_nav")) {
