@@ -8,6 +8,7 @@ import { SubjectComponent } from './subject/subject.component';
 import { InstallationComponent } from './installation/installation.component';
 import { ConductComponent } from './conduct/conduct.component';
 import { DeprecationsComponent } from './deprecations/deprecations.component';
+import { TeamComponent } from './team/team.component';
 
 const routes: Routes = [
   {
@@ -41,6 +42,10 @@ const routes: Routes = [
   {
     path: 'deprecations',
     component: DeprecationsComponent
+  },
+  {
+    path: 'team',
+    component: TeamComponent
   }
 ];
 

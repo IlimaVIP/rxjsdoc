@@ -1,31 +1,39 @@
 <nav class="side_menu" id="navbar">
   
   <div class="navigate">
-    <header><a routerLink="/"> RxJS </a></header>
+    <header><a routerLink="/" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}"> RxJS </a></header>
   </div>
   <div class="navigate">
-    <a class="nav-link" routerLink="/overview">Overview</a>
+    <a class="nav-link" routerLink="/overview" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}" (click)="toggle()" *ngIf="isCollapsed">Overview
+      <span class="chevron"><i class="fa fa-chevron-right"></i></span></a>
+    <a class="nav-link" routerLink="/overview" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}" (click)="toggle()" *ngIf="!isCollapsed">Overview
+        <span class="chevron"><i class="fa fa-chevron-down"></i></span></a>
   </div>
-  <ul class="sub_navigate">
-    <li><a class="nav-link" routerLink="/overview/observables">Observables</a></li>
-    <li><a class="nav-link" routerLink="/overview/subscription">Subscription</a></li>
-    <li><a class="nav-link" routerLink="/overview/subject">Subjects</a></li>
-  </ul>
+  <div *ngIf="!isCollapsed">
+    <ul class="sub_navigate">
+      <li><a class="nav-link" routerLink="/overview/observables" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">Observables</a></li>
+      <li><a class="nav-link" routerLink="/overview/subscription" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">Subscription</a></li>
+      <li><a class="nav-link" routerLink="/overview/subject" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">Subjects</a></li>
+    </ul>
+  </div>
   <div class="navigate">
-    <a class="nav-link" routerLink="/installation">Installation</a>
+    <a class="nav-link" routerLink="/installation" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">Installation</a>
   </div>
   <!-- <div class="navigate">
     <a class="nav-link" href="#Reference">Reference</a>
   </div> -->
   <div class="navigate">
-    <a class="nav-link" href="#">About Version 6</a>
+    <a class="nav-link" (click)="toggleV()" *ngIf="show" routerLink="/deprecations" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">About Version 6
+      <span class="chevron"><i class="fa fa-chevron-right"></i></span></a>
+    <a class="nav-link" (click)="toggleV()" *ngIf="!show" routerLink="/deprecations" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">About Version 6
+          <span class="chevron"><i class="fa fa-chevron-down"></i></span></a>
   </div>
-  <ul class="sub_navigate">
+  <ul class="sub_navigate" *ngIf="!show">
     <li><a class="nav-link" href="#">Migration</a></li>
-    <li><a class="nav-link" routerLink="/deprecations">Deprecations</a></li>
+    <li><a class="nav-link" routerLink="/deprecations" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">Deprecations</a></li>
   </ul>
   <div class="navigate">
-    <a class="nav-link" routerLink="/conduct">Code of Conduct</a>
+    <a class="nav-link" routerLink="/conduct" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">Code of Conduct</a>
   </div>
   
 </nav>
@@ -48,7 +56,7 @@
   <a routerLink="/overview" class="big_screen"><span>overview</span></a>
   <a routerLink="/installation" class="big_screen nav-link"><span>installation</span></a>
   <a href="#" class="big_screen"><span>migration</span></a>
-  <a href="#" class="big_screen"><span>team</span></a>
+  <a routerLink="/team" class="big_screen"><span>team</span></a>
   <a href="https://github.com/ReactiveX/rxjs" target="_blank"><i class="fa fa-github"></i></a>
 </nav>
 

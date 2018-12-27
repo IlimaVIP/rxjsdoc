@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'rxjsdoc';
+  isCollapsed: boolean = true;
+  show: boolean = true;
+  toggle() {
+    this.isCollapsed = !this.isCollapsed;
+  }
+  toggleV() {
+    this.show = !this.show;
+  }
 }
