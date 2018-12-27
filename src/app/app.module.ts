@@ -12,6 +12,7 @@ import { InstallationComponent } from './installation/installation.component';
 import { ConductComponent } from './conduct/conduct.component';
 import { DeprecationsComponent } from './deprecations/deprecations.component';
 import { TeamComponent } from './team/team.component';
+import { MigrationComponent } from './migration/migration.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { TeamComponent } from './team/team.component';
     InstallationComponent,
     ConductComponent,
     DeprecationsComponent,
-    TeamComponent
+    TeamComponent,
+    MigrationComponent
   ],
   imports: [
     BrowserModule,

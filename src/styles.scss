@@ -738,5 +738,11 @@
     }
         
   }
-
+  .code-example[language=sh] {
+      background-color: #333!important;
+      span {
+        color: #17ff0b!important;
+        font-family: "Droid Sans Mono",monospace!important;
+      }
+  }
   

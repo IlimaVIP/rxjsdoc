@@ -9,6 +9,7 @@ import { InstallationComponent } from './installation/installation.component';
 import { ConductComponent } from './conduct/conduct.component';
 import { DeprecationsComponent } from './deprecations/deprecations.component';
 import { TeamComponent } from './team/team.component';
+import { MigrationComponent } from './migration/migration.component';
 
 const routes: Routes = [
   {
@@ -46,6 +47,10 @@ const routes: Routes = [
   {
     path: 'team',
     component: TeamComponent
+  },
+  {
+    path: 'migration',
+    component: MigrationComponent
   }
 ];
 
