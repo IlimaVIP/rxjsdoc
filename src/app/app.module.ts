@@ -13,6 +13,10 @@ import { ConductComponent } from './conduct/conduct.component';
 import { DeprecationsComponent } from './deprecations/deprecations.component';
 import { TeamComponent } from './team/team.component';
 import { MigrationComponent } from './migration/migration.component';
+import { CoreteamComponent } from './coreteam/coreteam.component';
+import { LearningteamComponent } from './learningteam/learningteam.component';
+import { AlumnComponent } from './alumn/alumn.component';
+import { ContributorsComponent } from './contributors/contributors.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +30,11 @@ import { MigrationComponent } from './migration/migration.component';
     ConductComponent,
     DeprecationsComponent,
     TeamComponent,
-    MigrationComponent
+    MigrationComponent,
+    CoreteamComponent,
+    LearningteamComponent,
+    AlumnComponent,
+    ContributorsComponent
   ],
   imports: [
     BrowserModule,

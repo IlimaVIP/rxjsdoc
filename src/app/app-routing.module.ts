@@ -10,6 +10,10 @@ import { ConductComponent } from './conduct/conduct.component';
 import { DeprecationsComponent } from './deprecations/deprecations.component';
 import { TeamComponent } from './team/team.component';
 import { MigrationComponent } from './migration/migration.component';
+import { CoreteamComponent } from './coreteam/coreteam.component';
+import { LearningteamComponent } from './learningteam/learningteam.component';
+import { AlumnComponent } from './alumn/alumn.component';
+import { ContributorsComponent } from './contributors/contributors.component';
 
 const routes: Routes = [
   {
@@ -46,7 +50,25 @@ const routes: Routes = [
   },
   {
     path: 'team',
-    component: TeamComponent
+    component: TeamComponent,
+    children: [
+      {
+        path: '',
+        component: CoreteamComponent
+      },
+      {
+        path: 'learningteam',
+        component: LearningteamComponent
+      },
+      {
+        path: 'alumn',
+        component: AlumnComponent
+      },
+      {
+        path: 'contributors',
+        component: ContributorsComponent
+      }
+    ]
   },
   {
     path: 'migration',

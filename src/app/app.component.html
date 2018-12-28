@@ -23,9 +23,9 @@
     <a class="nav-link" href="#Reference">Reference</a>
   </div> -->
   <div class="navigate">
-    <a class="nav-link" (click)="toggleV()" *ngIf="show" routerLink="/migration" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">About Version 6
+    <a class="nav-link" (click)="toggleV()" *ngIf="show">About Version 6
       <span class="chevron"><i class="fa fa-chevron-right"></i></span></a>
-    <a class="nav-link" (click)="toggleV()" *ngIf="!show" routerLink="/migration" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">About Version 6
+    <a class="nav-link" (click)="toggleV()" *ngIf="!show">About Version 6
           <span class="chevron"><i class="fa fa-chevron-down"></i></span></a>
   </div>
   <ul class="sub_navigate" *ngIf="!show">

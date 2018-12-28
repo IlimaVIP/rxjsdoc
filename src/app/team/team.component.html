@@ -4,84 +4,14 @@
         <div class="content">
           <p><div class="aio-contributor-list" ng-version="6.1.3">
             <div class="flex-center group-buttons">
-              <a class="button mat-button filter-button ng-star-inserted selected">Core Team</a>
-              <a class="button mat-button filter-button ng-star-inserted">Learning Team</a>
-              <a class="button mat-button filter-button ng-star-inserted">Alumn</a>
-              <a class="button mat-button filter-button ng-star-inserted">Contributors</a>
-            </div><!----><section class="grid-fluid ng-star-inserted">
-            <div class="contributor-group"><!---->
-              <div class="aio-contributor ng-star-inserted">
-                <div class="contributor-card"><div class="card-front">
-                  <h3>Ben Lesh</h3>
-                  <div class="contributor-image" style="background-image: url(&quot;https://avatars2.githubusercontent.com/u/1540597&quot;);">
-                    <div class="contributor-info"><!----><!---->
-                      <a class="icon ng-star-inserted" mat-button="" target="_blank" href="https://twitter.com/BenLesh"><span class="fa fa-twitter fa-2x"></span></a><!---->
-                      <a class="icon ng-star-inserted" mat-button="" target="_blank" href="https://github.com/benlesh"><span class="fa fa-github fa-2x"></span></a><!---->
-                      <a class="icon ng-star-inserted" mat-button="" target="_blank" href="http://www.benlesh.com"><span class="fa fa-link fa-2x"></span></a>
-                      
-                    </div>
-                  </div>
-                  </div><!---->
-                </div>
-              </div>
-              <div class="aio-contributor ng-star-inserted">
-                <div class="contributor-card"><div class="card-front">
-                  <h3>David Driscoll</h3>
-                  <div class="contributor-image" style="background-image: url(&quot;https://avatars0.githubusercontent.com/u/1269157&quot;);">
-                    <div class="contributor-info"><!----><!---->
-                      <a class="icon ng-star-inserted" mat-button="" target="_blank" href="https://twitter.com/david_dotnet"><span class="fa fa-twitter fa-2x"></span></a>
-                      <a class="icon ng-star-inserted" mat-button="" target="_blank" href="https://github.com/david-driscoll"><span class="fa fa-github fa-2x"></span></a>
-                      <a class="icon ng-star-inserted" mat-button="" target="_blank" href="http://david-driscoll.github.io"><span class="fa fa-link fa-2x"></span></a>
-                      
-                    </div>
-                  </div>
-                  </div><!---->
-                </div>
-              </div><div class="aio-contributor ng-star-inserted">
-              <div class="contributor-card">
-                <div class="card-front">
-                  <h3>Nicholas Jamieson</h3>
-                  <div class="contributor-image" style="background-image: url(&quot;https://avatars0.githubusercontent.com/u/3878593&quot;);">
-                    <div class="contributor-info"><!----><!---->
-                      <a class="icon ng-star-inserted" mat-button="" target="_blank" href="https://twitter.com/ncjamieson"><span class="fa fa-twitter fa-2x"></span></a><!---->
-                      <a class="icon ng-star-inserted" mat-button="" target="_blank" href="https://github.com/cartant"><span class="fa fa-github fa-2x"></span></a><!---->
-                      <a class="icon ng-star-inserted" mat-button="" target="_blank" href="http://cartant.com"><span class="fa fa-link fa-2x"></span></a>
-                      
-                    </div>
-                  </div>
-                </div><!---->
-              </div>
-              
-              </div>
-              <div class="aio-contributor ng-star-inserted">
-                <div class="contributor-card"><div class="card-front">
-                  <h3>OJ Kwon</h3>
-                  <div class="contributor-image" style="background-image: url(&quot;https://avatars1.githubusercontent.com/u/1210596&quot;);">
-                    <div class="contributor-info"><!----><!---->
-                      <a class="icon ng-star-inserted" mat-button="" target="_blank" href="https://twitter.com/_ojkwon"><span class="fa fa-twitter fa-2x"></span></a><!---->
-                      <a class="icon ng-star-inserted" mat-button="" target="_blank" href="https://github.com/kwonoj"><span class="fa fa-github fa-2x"></span></a>
-                      <!----></div></div></div><!----></div></div><div class="aio-contributor ng-star-inserted"><div class="contributor-card">
-                        <div class="card-front">
-                          <h3>Paul Taylor</h3>
-                          <div class="contributor-image" style="background-image: url(&quot;https://avatars2.githubusercontent.com/u/178183&quot;);">
-                            <div class="contributor-info"><!----><!---->
-                              <a class="icon ng-star-inserted" mat-button="" target="_blank" href="https://twitter.com/trxcllnt">
-                                <span class="fa fa-twitter fa-2x"></span></a><!---->
-                                <a class="icon ng-star-inserted" mat-button="" target="_blank" href="https://github.com/trxcllnt">
-                                  <span class="fa fa-github fa-2x"></span></a><!---->
-                                  <a class="icon ng-star-inserted" mat-button="" target="_blank" href="http://graphistry.com">
-                                    <span class="fa fa-link fa-2x"></span></a></div></div></div><!----></div></div>
-                                    <div class="aio-contributor ng-star-inserted"><div class="contributor-card">
-                                      <div class="card-front">
-                                        <h3>Tracy Lee</h3>
-                                        <div class="contributor-image" style="background-image: url(&quot;https://avatars0.githubusercontent.com/u/8270563&quot;);">
-                                          <div class="contributor-info"><!----><!---->
-                                            <a class="icon ng-star-inserted" mat-button="" target="_blank" href="https://twitter.com/ladyleet">
-                                              <span class="fa fa-twitter fa-2x"></span></a><!---->
-                                              <a class="icon ng-star-inserted" mat-button="" target="_blank" href="https://github.com/ladyleet">
-                                                <span class="fa fa-github fa-2x"></span></a><!---->
-                                                <a class="icon ng-star-inserted" mat-button="" target="_blank" href="http://thisdot.co">
-                                                  <span class="fa fa-link fa-2x"></span></a></div></div></div><!----></div></div></div></section></div>
-  
-  </div>
-  </div></div></section>
+              <a class="button mat-button filter-button ng-star-inserted " routerLink="/team/" [routerLinkActive]="['selected']" [routerLinkActiveOptions]="{exact: true}">Core Team</a>
+              <a class="button mat-button filter-button ng-star-inserted" routerLink="/team/learningteam" [routerLinkActive]="['selected']" [routerLinkActiveOptions]="{exact: true}">Learning Team</a>
+              <a class="button mat-button filter-button ng-star-inserted" routerLink="/team/alumn" [routerLinkActive]="['selected']" [routerLinkActiveOptions]="{exact: true}">Alumn</a>
+              <a class="button mat-button filter-button ng-star-inserted" routerLink="/team/contributors" [routerLinkActive]="['selected']" [routerLinkActiveOptions]="{exact: true}">Contributors</a>
+            </div><!---->
+            <router-outlet></router-outlet>
+          </div>
+        </div>
+      </div>
+     </div>
+</section>
