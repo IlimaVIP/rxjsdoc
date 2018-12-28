@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="styles.7196f55c9d7233a431a6.css"></head>
 <body>
   <app-root></app-root>
-<script type="text/javascript" src="runtime.ec2944dd8b20ec099bf3.js"></script><script type="text/javascript" src="polyfills.c6871e56cb80756a5498.js"></script><script type="text/javascript" src="main.45e336a0f1b7134dc5d4.js"></script></body>
+<script type="text/javascript" src="runtime.ec2944dd8b20ec099bf3.js"></script><script type="text/javascript" src="polyfills.c6871e56cb80756a5498.js"></script><script type="text/javascript" src="main.c2fe8ffa240c198269a6.js"></script></body>
 <script>
 if (window.innerWidth > 990) {
   document.getElementById("menu").classList.add("toggle_nav");
@@ -19,6 +19,13 @@ if (window.innerWidth > 990) {
   document.getElementById("main-doc").style.marginLeft = "280px";
   document.getElementById("footer").style.marginLeft = "280px";
 }
+var navbar = document.getElementById('navbar');
+var navbarChildren = document.getElementsByClassName('nav-link');
+var body = document.getElementsByTagName("body")[0]
+
+body.addEventListener("click", function(e) {
+  // console.log(e.target == navbar)
+});
 function openNav() {
   if (window.innerWidth > 990) {
     if(!document.getElementById("menu").classList.contains("toggle_nav")) {
